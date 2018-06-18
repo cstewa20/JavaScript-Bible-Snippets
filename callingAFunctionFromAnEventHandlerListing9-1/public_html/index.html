@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+Calling a Function from an Event Handler
+HTML: jsb-09-01.html
+-->
+<html>
+	<head>
+		<title>Calling a Function from an Event Handler</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="jsb-09-01.js"></script>
+	</head>
+	<body>
+		<h1>Passing a Parameter to a Function</h1>
+		<p id ="putText"></p>
+		<script type="text/javascript">
+			var myText = document.getElementById("putText");
+			myText.innerHTML = "Hello Charles.";
+			myText.style.color = red;
+			greeting("Charles");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+Listing 7-9 JavaScript Bible
+-->
+<html>
+	<head>
+		<title>Text Object Value</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+			function upperMe() {
+				document.getElementById("output").value = document.getElementById("input").value.toUpperCase();
+			}
+		</script>
+	</head>
+	<body>
+		Enter lowercase letters for conversion to uppercase:<br>
+		<form name="converter">
+			<input type="text" name="input" id="input" value="sample" onchange="upperMe()" /><br />
+			<input type="text" name="output" id="output" value="" />
+		</form>
+	</body>
+</html>

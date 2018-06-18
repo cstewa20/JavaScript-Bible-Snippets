@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Navigating with a select Object
+HTML: jsb-11-05.html
+-->
+<html>
+	<head>
+		<title>Select Navigation</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="jsb-global.js"></script>
+		<script type="text/javascript" src="jsb-.js"></script>
+	</head>
+	<body>
+		<h1>Select Navigation</h1>	
+		<form action="ridirect.php" method="get">
+			<p>
+				<label for="urlList">Choose a place to go:</label>
+				<select id="urlList" name="urlList">
+					<option selected value="index.html">Home Page</option>
+					<option value="store.html">Shop Our Store</option>
+					<option value="policies.html">Shipping Policies</option>
+				</select>
+
+				<input type="submit" id="submit-button" value="Go">
+			</p>
+		</form>
+	</body>
+</html>

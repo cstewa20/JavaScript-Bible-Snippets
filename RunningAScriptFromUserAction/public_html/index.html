@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Listing 7-8 JavaScript Bible
+Running a Script from User Action
+-->
+<html>
+	<head>
+		<title>An onclick script</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+			function alertUser() {
+				alert("Ouch");
+			}
+		</script>
+		<script type="text/javascript">
+			// This script executes as the page loads.
+			function startScript() {
+					document.write("<br />", "Hello, world.", "<br />");
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			startScript();
+		</script>
+		Here is some text.
+		<form>
+			<input type="text" name="entry" value="Just some random text">
+			<input type="button" name="oneButton" value="Press Me!"
+				   onclick="alertUser()">
+		</form>
+	</body>
+</html>

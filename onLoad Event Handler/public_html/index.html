@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+Listing 7-7
+Running a Script from the onload Event Handler
+-->
+<html>
+	<head>
+		<title>An old-school HTML-based onload script</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+			function done() {
+				alert("The page has finished loading.");
+			}
+		</script>
+	</head>
+	<body onload="done()">
+		<h1>An old-school HTML-based onload script</h1>
+		<p>Here is some body text.</p>
+	</body>
+</html>
